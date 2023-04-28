@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          katlock:
+            issuer-uri: http://localhost:8085
+        registration: 
+          pkce:
+            provider: katlock
+            client-id: pkce-client
+            client-secret: secret
+            scope: openid,email
+
+
+logging:
+  level:
+    root: info
+    cloud:
+      sonam: debug
+server:
+  port: 8080
