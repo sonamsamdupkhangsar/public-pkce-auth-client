@@ -16,6 +16,9 @@ spring:
 logging:
   level:
     root: info
+    org:
+      springframework:
+        security: trace
     cloud:
       sonam: debug
 server:
