@@ -9,7 +9,6 @@ spring:
           pkce:
             provider: katlock
             client-id: pkce-client
-            client-secret: secret
             scope: openid,email
 
 
